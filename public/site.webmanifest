@@ -1,0 +1,13 @@
+{
+  "name": "Innodra Solutions",
+  "short_name": "Innodra",
+  "icons": [
+    {"src": "/img/innodra-cube-64.png", "sizes": "64x64", "type": "image/png"},
+    {"src": "/img/innodra-cube-128.png", "sizes": "128x128", "type": "image/png"},
+    {"src": "/img/innodra-cube.png", "sizes": "512x512", "type": "image/png"}
+  ],
+  "theme_color": "#0f172a",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/"
+}

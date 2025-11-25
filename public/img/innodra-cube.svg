@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Innodra Solutions Cube Logo -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-labelledby="title desc">
+  <title id="title">Innodra Solutions Cube Logo</title>
+  <desc id="desc">Geometric cube composed of green shaded facets representing innovation and modular software solutions</desc>
+  <defs>
+    <linearGradient id="faceLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6ee7b7" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="faceMid" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#10b981" />
+    </linearGradient>
+    <linearGradient id="faceDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="faceDeeper" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065f46" />
+      <stop offset="100%" stop-color="#064e3b" />
+    </linearGradient>
+    <linearGradient id="outlineGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.9" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="objectBoundingBox">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#065f46" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Invisible padding -->
+  <rect width="200" height="200" fill="none" />
+
+  <!-- Shadow ellipse -->
+  <ellipse cx="100" cy="155" rx="58" ry="14" fill="#065f46" opacity="0.15" />
+
+  <!-- Cube (front faces) -->
+  <!-- Top face -->
+  <polygon points="55,70 100,50 145,70 100,90" fill="url(#faceLight)" stroke="url(#outlineGlow)" stroke-width="2" />
+  <!-- Right face mid -->
+  <polygon points="100,90 145,70 145,115 100,135" fill="url(#faceMid)" stroke="#047857" stroke-width="2" />
+  <!-- Left face mid -->
+  <polygon points="55,70 100,90 100,135 55,115" fill="url(#faceDark)" stroke="#047857" stroke-width="2" />
+  <!-- Right deeper panel -->
+  <polygon points="100,90 100,135 145,115 145,70" fill="url(#faceDeeper)" opacity="0.85" />
+  <!-- Left deeper panel -->
+  <polygon points="55,115 100,135 100,90 55,70" fill="#065f46" opacity="0.85" />
+
+  <!-- Inner cube (symbolic core) -->
+  <polygon points="75,85 100,72 125,85 100,98" fill="#34d399" stroke="#059669" stroke-width="1.5" />
+  <polygon points="100,98 125,85 125,110 100,123" fill="#10b981" stroke="#047857" stroke-width="1.5" />
+  <polygon points="75,85 100,98 100,123 75,110" fill="#059669" stroke="#047857" stroke-width="1.5" />
+
+  <!-- Accent highlights -->
+  <path d="M55 70 L100 90 L145 70" fill="none" stroke="#6ee7b7" stroke-opacity="0.4" stroke-width="2" />
+  <path d="M100 90 L100 135" fill="none" stroke="#6ee7b7" stroke-opacity="0.25" stroke-width="2" stroke-dasharray="4 6" />
+
+  <!-- Outline emphasis -->
+  <polygon points="55,70 100,50 145,70 145,115 100,135 55,115" fill="none" stroke="url(#outlineGlow)" stroke-width="2.5" filter="url(#shadow)" />
+</svg>

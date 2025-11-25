@@ -1,0 +1,10 @@
+This is a placeholder text file explaining that you should place your raster logo here.
+
+Expected files you can add:
+- innodra-cube.png (at least 512x512)
+- innodra-cube@2x.png (1024x1024 for high DPI)
+- innodra-cube-128.png (128x128)
+- innodra-cube-64.png (64x64) used for favicon fallback
+- innodra-cube.webp (preferred modern format)
+
+For now we reference a data URI fallback embedded directly in HTML until you replace with actual images.

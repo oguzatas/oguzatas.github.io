@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Innodra Solutions Hex Cube Logo</title>
+  <desc id="desc">Dark emerald hexagonal ring with inner white inset framing a glossy faceted green cube</desc>
+  <defs>
+    <!-- Ring gradients -->
+    <linearGradient id="ringOuter" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1f1c"/>
+      <stop offset="100%" stop-color="#062821"/>
+    </linearGradient>
+    <linearGradient id="ringInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#004233"/>
+      <stop offset="100%" stop-color="#003227"/>
+    </linearGradient>
+    <!-- Cube facet gradients -->
+    <linearGradient id="facetTop" x1="15%" y1="10%" x2="85%" y2="90%">
+      <stop offset="0%" stop-color="#19f2c4"/>
+      <stop offset="35%" stop-color="#00d4a5"/>
+      <stop offset="100%" stop-color="#01805c"/>
+    </linearGradient>
+    <linearGradient id="facetLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#017054"/>
+      <stop offset="100%" stop-color="#012d22"/>
+    </linearGradient>
+    <linearGradient id="facetRight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00a076"/>
+      <stop offset="60%" stop-color="#007b5b"/>
+      <stop offset="100%" stop-color="#003c2d"/>
+    </linearGradient>
+    <linearGradient id="facetHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34ffd1"/>
+      <stop offset="70%" stop-color="#02c993" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#00956d" stop-opacity="0.6"/>
+    </linearGradient>
+    <radialGradient id="specGloss" cx="35%" cy="25%" r="70%">
+      <stop offset="0%" stop-color="#d9fff7" stop-opacity="0.95"/>
+      <stop offset="35%" stop-color="#6bffe2" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00b488" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#001c16" flood-opacity="0.55" />
+    </filter>
+    <filter id="innerShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feOffset dx="0" dy="2" />
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="arithmetic" k2="-1" k3="1"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0  0 0 0 0 0.25  0 0 0 0 0.2  0 0 0 0.65 0"/>
+    </filter>
+  </defs>
+
+  <!-- Center group for even scaling -->
+  <g transform="translate(256 256)">
+    <!-- Hex ring -->
+    <g filter="url(#softShadow)">
+      <polygon points="0,-246 213,-123 213,123 0,246 -213,123 -213,-123" fill="url(#ringOuter)"/>
+      <polygon points="0,-200 173,-100 173,100 0,200 -173,100 -173,-100" fill="url(#ringInner)" stroke="#052d24" stroke-width="3"/>
+      <!-- White inset border -->
+      <polygon points="0,-196 169,-98 169,98 0,196 -169,98 -169,-98" fill="none" stroke="#ffffff" stroke-width="14" stroke-linejoin="round"/>
+    </g>
+
+    <!-- Cube group -->
+    <g transform="scale(1.02) translate(0,6)">
+      <!-- Left facet -->
+      <polygon points="0,0 -95,-55 -95,75 0,130" fill="url(#facetLeft)" />
+      <!-- Right facet -->
+      <polygon points="0,0 95,-55 95,75 0,130" fill="url(#facetRight)" />
+      <!-- Top facet -->
+      <polygon points="0,-115 -95,-55 0,0 95,-55" fill="url(#facetTop)" />
+      <!-- Highlight facet (front diamond) -->
+      <polygon points="0,-50 -48,-22 0,0 48,-22" fill="url(#facetHighlight)" />
+      <!-- Inner glossy overlay -->
+      <ellipse cx="-10" cy="-40" rx="70" ry="55" fill="url(#specGloss)" transform="rotate(-12)" />
+    </g>
+
+    <!-- Subtle inner shadow to give depth -->
+    <circle r="190" fill="none" stroke="#062a23" stroke-width="22" opacity="0.5" filter="url(#innerShadow)" />
+  </g>
+</svg>
